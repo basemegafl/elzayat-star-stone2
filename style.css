@@ -1,0 +1,246 @@
+/* Base Resets & Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250 247 242 / var(--tw-bg-opacity, 1));
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Header & Sticky Navigation */
+#l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 20px;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    width: 95%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-shadow: 3px 1px 10px 3px gray;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 80px;
+    gap: 10px;
+}
+
+#wp {
+    width: 30px;
+    height: auto;
+}
+
+#nav {
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 3px;
+}
+
+#spacer {
+    display: none; /* Removed fixed 800px width */
+}
+
+/* Hero Section */
+#kol {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#w {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 80px;
+}
+
+#f {
+    max-width: 600px;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #BF953F, #000000, #B38728, #000000, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+#line {
+    background-color: #AA771C;
+    width: 80%;
+    max-width: 220px;
+    height: 3px;
+    border-radius: 200px;
+    margin: 20px auto;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #BF953F;
+    margin: 20px 0;
+}
+
+#new {
+    background-color: #db3b3b;
+    max-width: 200px;
+    padding: 8px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+/* Products Grid / Slider */
+#slider-fix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.slide {
+    background-color: rgb(5, 5, 3);
+    width: 220px;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 12px 10px 0px rgb(107, 101, 101);
+}
+
+.img-slide {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+}
+
+/* Product Cards Container */
+.kl {
+    padding: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 10px rgb(148 145 145 / 50%);
+}
+
+.prod-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: #726f6f 0 0 20px 2px;
+}
+
+.p-pro {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin: 15px 0 5px 0;
+}
+
+.whats-btn {
+    color: white;
+    background-color: #AA771C;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #4e4b4b;
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+#wts-btn {
+    color: #ffd700;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #db3b3b;
+    border-radius: 5px;
+}
+
+/* ==========================================
+   Mobile Responsive Styles (Max Width: 768px)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    #l {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    #nav {
+        margin-left: 0;
+    }
+
+    #f {
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+
+    .kl {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .slide {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .whats-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
